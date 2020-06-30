@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 125vh;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+.container .one {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    flex: 1;
+}
+
+.one {
+    background: #00008b;
+    display: flex;
+    flex-direction: column;
+}
+
+.two {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-flow: nowrap;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.three {
+    background: #DCDCDC;
+    height: 45vh;
+    padding: 10px 250px;
+    flex: 1 1 auto;
+    margin-bottom: auto;
+}
+
+.four {
+    visibility: hidden;
+    width: 0;
+    position: relative;
+}
+
+.five {
+    pointer-events: none;
+}
+
+.five .cropme {
+    background: #DCDCDC;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    height: 80px;
+}
+
+.heading {
+    margin-top: 20px;
+    padding-right: 200px;
+    font-weight: bolder;
+    color: white;
+    font-size: 70px;
+    line-height: 1.1em;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.text2 {
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+.imgtext {
+    font-size: 16px;
+    color: #00008b;
+}
+
+.portion {
+    font-size: 12px;
+    display: inline-block;
+    color: #00008b;
+    margin: 2%;
+}
+
+.flex-container-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+form {
+    position: relative;
+    width: 100%;
+    max-width: 85rem;
+    font-size: 1.8em;
+    font-weight: normal;
+    line-height: 1.2222em;
+}
+
+form>div:last-child {
+    justify-content: space-around;
+}
+
+input,
+textarea {
+    flex-grow: 1;
+    margin: .5rem;
+    padding: 1.1rem 1.5rem;
+    border: 2px solid white;
+    border-radius: 3px;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+#btn {
+    flex-grow: 0;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00008b;
+    border: #00008b;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+#btn:focus,
+#btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #00008b;
+    border: #00008b;
+}
+
+
+/* --------------- image ----------------*/
+
+@media screen and (min-width: 750px) {
+    .container {
+        display: flex;
+        height: 130vh;
+    }
+    .container .one {
+        padding-top: 18px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: white;
+        flex: 1;
+    }
+    .one {
+        background: #00008b;
+        display: flex;
+        flex-direction: column;
+    }
+    .two {
+        background: white;
+        display: flex;
+        flex-direction: row;
+        flex-flow: nowrap;
+        height: 80vh;
+        padding: 30px;
+        flex-grow: 1;
+    }
+    .three {
+        background: #DCDCDC;
+        height: 50vh;
+        padding: 10px 250px;
+        flex: 1 1 auto;
+        margin-bottom: auto;
+    }
+    .four {
+        visibility: visible;
+        background: #00008b;
+        width: 50%;
+        padding: 20px 30px;
+        flex-grow: 1;
+    }
+    .five {
+        background: #DCDCDC;
+        width: 50%;
+    }
+    .logo {
+        height: 80px;
+    }
+    .heading {
+        margin-top: 20px;
+        padding-right: 200px;
+        font-weight: bolder;
+        color: white;
+        font-size: 70px;
+        line-height: 1.1em;
+    }
+    .dtext {
+        margin-top: 20px;
+    }
+    .text2 {
+        margin-top: 20px;
+        margin-bottom: auto;
+    }
+    .imgtext {
+        font-size: 16px;
+        color: #00008b;
+    }
+    #getname {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #getcity {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .portion {
+        font-size: 12px;
+        display: inline-block;
+        color: #00008b;
+        margin: 2%;
+    }
+    .toolbar {
+        display: inline;
+        padding-right: 50px;
+    }
+    li {
+        font: size 24px;
+    }
+    .toolbar>li:last-child {
+        float: right;
+    }
+    .fas {
+        float: right;
+        margin-right: 30px;
+    }
+    .arrow {
+        margin-right: 0;
+    }
+    .flex-container-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+    }
+    form {
+        position: relative;
+        width: 100%;
+        max-width: 85rem;
+        font-size: 1.8em;
+        font-weight: normal;
+        line-height: 1.2222em;
+    }
+    form>div:last-child {
+        justify-content: space-around;
+    }
+    input,
+    textarea {
+        flex-grow: 1;
+        margin: .5rem;
+        padding: 1.1rem 1.5rem;
+        border: 2px solid white;
+        border-radius: 3px;
+        -webkit-transition: background .2s;
+        transition: background .2s;
+    }
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: none;
+    }
+    #btn {
+        flex-grow: 0;
+        font-weight: bold;
+        color: #fff;
+        background-color: #00008b;
+        border: #00008b;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    #btn:focus,
+    #btn:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #00008b;
+        border: #00008b;
+    }
+    /* --------------- image ----------------*/
+    img {
+        max-width: 100%;
+    }
+    section {
+        height: 100%;
+    }
+    .hidden {
+        display: none;
+    }
+    .drop {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: 30px;
+        color: #333;
+        cursor: pointer;
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+    }
+    .drop.dragging,
+    .drop:hover {
+        border-color: rgba(51, 51, 51, 0.8);
+    }
+    .drop p {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        margin-top: -19px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .image-resize {
+        max-width: 600px;
+        margin: auto;
+    }
+    .btn {
+        margin-top: 20px;
+        padding: 8px 25px;
+        font-size: 16px;
+        color: #fff;
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    .btn .fa:first-child {
+        margin-right: 5px;
+    }
+    .thumbnail {
+        display: inline-block;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+    .thumbnail img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.clear {
+    font-size: 0px;
+    line-height: 0px;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    clear: both;
+}
+
+h1 {
+    display: block;
+    font-family: arial;
+    font-size: 35px;
+    color: #39acac;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    clear: both;
+    font-family: arial;
+    font-size: 25px;
+    color: #39acac;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.simple-cropper-images {
+    width: 820px;
+    margin: 0 auto 20px;
+}
+
+.cropme {
+    background-image: url('../images/UploadLight.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.cropme:hover {
+    background-image: url('../images/UploadDark.png');
+}
+
+.text {
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.code {
+    font-size: 14px;
+    color: #4e4e4e;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
